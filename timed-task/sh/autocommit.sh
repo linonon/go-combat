@@ -2,6 +2,7 @@
 
 function cdgpacp() {
     cd $1
+    pwd
 	git pull && git add .
 	if [[ $2 != "" ]]; then
 		git commit -m $2
@@ -11,6 +12,8 @@ function cdgpacp() {
 	git push
     cd -
 }
+
+TIMESTAMP="定時提交: `date`"
 
 WORKSPACE="/Users/linonon/Workspace"
 
@@ -22,10 +25,10 @@ Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
 MyMacConfig=$WORKSPACE/MyMacConfig
 leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
-cdgpacp $Go_Combat `date`
-cdgpacp $PATH_101 `date`
-cdgpacp $Cloud_native_gocamp `date`
-cdgpacp $GO_Advanced_training_camp `date`
-cdgpacp $Learn_Go_with_Github `date`
-cdgpacp $MyMacConfig `date`
-cdgpacp $leetcode_go_TDD `date`
+cdgpacp $Go_Combat TIMESTAMP
+cdgpacp $PATH_101 TIMESTAMP
+cdgpacp $Cloud_native_gocamp TIMESTAMP
+cdgpacp $GO_Advanced_training_camp TIMESTAMP
+cdgpacp $Learn_Go_with_Github TIMESTAMP
+cdgpacp $MyMacConfig TIMESTAMP
+cdgpacp $leetcode_go_TDD TIMESTAMP
