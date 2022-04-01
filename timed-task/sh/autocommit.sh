@@ -14,6 +14,7 @@ function cdgpacp() {
 
 WORKSPACE="/Users/linonon/Workspace"
 
+Go_Combat=$WORKSPACE/go-combat
 PATH_101=$WORKSPACE/101
 Cloud_native_gocamp=$WORKSPACE/Cloud-native-gocamp
 GO_Advanced_training_camp=$WORKSPACE/GO-Advanced-training-camp
@@ -21,4 +22,10 @@ Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
 MyMacConfig=$WORKSPACE/MyMacConfig
 leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
-cdgpacp PATH_101
+cdgpacp $Go_Combat `date`
+cdgpacp $PATH_101 `date`
+cdgpacp $Cloud_native_gocamp `date`
+cdgpacp $GO_Advanced_training_camp `date`
+cdgpacp $Learn_Go_with_Github `date`
+cdgpacp $MyMacConfig `date`
+cdgpacp $leetcode_go_TDD `date`
