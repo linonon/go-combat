@@ -14,11 +14,11 @@ function cdgpacp() {
 
 WORKSPACE="/Users/linonon/Workspace"
 
-101PATH=$WORKSPACE/101
-Cloud-native-gocamp=$WORKSPACE"/Cloud-native-gocamp"
-GO-Advanced-training-camp=$WORKSPACE"/GO-Advanced-training-camp"
-Learn-Go-with-Github=$WORKSPACE"/Learn-Go-with-Github"
-MyMacConfig=$WORKSPACE"/MyMacConfig"
-leetcode-go-TDD=$WORKSPACE"/leetcode-go-TDD"
+PATH_101=$WORKSPACE/101
+Cloud_native_gocamp=$WORKSPACE/Cloud-native-gocamp
+GO_Advanced_training_camp=$WORKSPACE/GO-Advanced-training-camp
+Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
+MyMacConfig=$WORKSPACE/MyMacConfig
+leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
 cdgpacp 101PATH
