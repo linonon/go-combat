@@ -21,4 +21,4 @@ Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
 MyMacConfig=$WORKSPACE/MyMacConfig
 leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
-cdgpacp 101PATH
+cdgpacp PATH_101
