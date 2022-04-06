@@ -15,7 +15,7 @@ function cdgpacp() {
 }
 
 DATE=$(date +%Y%m%d)
-TIMESTAMP=`date`
+TIMESTAMP=$DATE
 
 WORKSPACE="/Users/linonon/Workspace"
 
