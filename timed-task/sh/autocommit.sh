@@ -37,4 +37,4 @@ cdgpacp $Learn_Go_with_Github $TIMESTAMP
 cdgpacp $MyMacConfig $TIMESTAMP
 cdgpacp $leetcode_go_TDD $TIMESTAMP
 
-cd CURRENT_DIR
+cd $CURRENT_DIR
