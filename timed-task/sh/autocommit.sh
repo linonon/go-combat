@@ -1,6 +1,7 @@
 #!/usr/local/bin/zsh
 
 function cdgpacp() {
+    echo ""
     cd $1
     pwd
 	git pull && git add .
@@ -25,10 +26,10 @@ Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
 MyMacConfig=$WORKSPACE/MyMacConfig
 leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
-cdgpacp $Go_Combat TIMESTAMP
-cdgpacp $PATH_101 TIMESTAMP
-cdgpacp $Cloud_native_gocamp TIMESTAMP
-cdgpacp $GO_Advanced_training_camp TIMESTAMP
-cdgpacp $Learn_Go_with_Github TIMESTAMP
-cdgpacp $MyMacConfig TIMESTAMP
-cdgpacp $leetcode_go_TDD TIMESTAMP
+cdgpacp $Go_Combat $TIMESTAMP
+cdgpacp $PATH_101 $TIMESTAMP
+cdgpacp $Cloud_native_gocamp $TIMESTAMP
+cdgpacp $GO_Advanced_training_camp $TIMESTAMP
+cdgpacp $Learn_Go_with_Github $TIMESTAMP
+cdgpacp $MyMacConfig $TIMESTAMP
+cdgpacp $leetcode_go_TDD $TIMESTAMP
