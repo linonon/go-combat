@@ -14,7 +14,8 @@ function cdgpacp() {
     cd -
 }
 
-TIMESTAMP=$(echo "定時提交: $(date)")
+DATE=$(date +%Y%m%d)
+TIMESTAMP=$(echo "定時提交: $DATE")
 
 WORKSPACE="/Users/linonon/Workspace"
 
