@@ -4,7 +4,6 @@ function cdgpacp() {
     echo ""
     cd $1
     pwd
-	CURRENT_DIR=$(pwd)
 	git pull && git add .
 	if [[ $2 != "" ]]; then
 		git commit -m $2
@@ -12,9 +11,10 @@ function cdgpacp() {
 		git commit -m "Push without message"
 	fi	
 	git push
-    cd CURRENT_DIR
 	echo ""
 }
+
+CURRENT_DIR=$(pwd)
 
 DATE="定時提交:"$(date +%Y%m%d)
 TIMESTAMP=$DATE
@@ -36,3 +36,5 @@ cdgpacp $GO_Advanced_training_camp $TIMESTAMP
 cdgpacp $Learn_Go_with_Github $TIMESTAMP
 cdgpacp $MyMacConfig $TIMESTAMP
 cdgpacp $leetcode_go_TDD $TIMESTAMP
+
+cd CURRENT_DIR
