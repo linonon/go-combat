@@ -4,6 +4,7 @@ function cdgpacp() {
     echo ""
     cd $1
     pwd
+	CURRENT_DIR=$(pwd)
 	git pull && git add .
 	if [[ $2 != "" ]]; then
 		git commit -m $2
@@ -11,7 +12,8 @@ function cdgpacp() {
 		git commit -m "Push without message"
 	fi	
 	git push
-    cd -
+    cd CURRENT_DIR
+	echo ""
 }
 
 DATE="定時提交:"$(date +%Y%m%d)
@@ -19,17 +21,17 @@ TIMESTAMP=$DATE
 
 WORKSPACE="/Users/linonon/Workspace"
 
-Go_Combat=$WORKSPACE/go-combat
+go_combat=$WORKSPACE/go-combat
 PATH_101=$WORKSPACE/101
-Cloud_native_gocamp=$WORKSPACE/Cloud-native-gocamp
+cloud_native_gocamp=$WORKSPACE/Cloud-native-gocamp
 GO_Advanced_training_camp=$WORKSPACE/GO-Advanced-training-camp
 Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
 MyMacConfig=$WORKSPACE/MyMacConfig
 leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
 
-cdgpacp $Go_Combat $TIMESTAMP
+cdgpacp $go_combat $TIMESTAMP
 cdgpacp $PATH_101 $TIMESTAMP
-cdgpacp $Cloud_native_gocamp $TIMESTAMP
+cdgpacp $cloud_native_gocamp $TIMESTAMP
 cdgpacp $GO_Advanced_training_camp $TIMESTAMP
 cdgpacp $Learn_Go_with_Github $TIMESTAMP
 cdgpacp $MyMacConfig $TIMESTAMP
