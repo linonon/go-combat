@@ -14,8 +14,7 @@ function cdgpacp() {
     cd -
 }
 
-TIMESTAMP="定時提交: `date`"
-
+TIMESTAMP=`echo "定時提交: `date`"`
 WORKSPACE="/Users/linonon/Workspace"
 
 Go_Combat=$WORKSPACE/go-combat
