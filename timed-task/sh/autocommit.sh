@@ -5,11 +5,7 @@ function cdgpacp() {
     cd $1
     pwd
 	git pull && git add .
-	if [[ $2 != "" ]]; then
-		git commit -m "定時提交:"$(date '+%Y-%m-%d+%H:%M:%S')
-	else 
-		git commit -m "Push without message"
-	fi	
+	git commit -m "定時提交:"$(date '+%Y-%m-%d+%H:%M:%S')
 	git push
 	echo ""
 }
