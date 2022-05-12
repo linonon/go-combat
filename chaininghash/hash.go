@@ -30,18 +30,18 @@ func NewHashMap(cap int) *Map {
 }
 
 // Index returns the index of hashMap
-func (h *Map) Index(key string) int {
+func (h *Map) Index(key string) uint {
 	return BKDRHash(key, h.cap)
 }
 
 // BKDRHash calculates the hash of key
-func BKDRHash(str string, cap int) int {
-	seed := int(13)
-	hash := int(0)
+func BKDRHash(str string, cap int) uint {
+	seed := uint(13)
+	hash := uint(0)
 	for i := 0; i < len(str); i++ {
-		hash = (hash * seed) + int(str[i])
+		hash = (hash * seed) + uint(str[i])
 	}
-	return hash % cap
+	return hash % uint(cap)
 }
 
 // Put key value pair into hashMap

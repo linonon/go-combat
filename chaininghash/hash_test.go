@@ -11,7 +11,7 @@ import (
 func TestHashMap(t *testing.T) {
 	h := NewHashMap(32)
 	var keyB strings.Builder
-	for i := 0; i < 90000000; i++ {
+	for i := 0; i < 100000000; i++ {
 		si := strconv.Itoa(i)
 		keyB.WriteByte(si[0])
 	}
