@@ -25,15 +25,6 @@ func easyReply() {
 	updates := bot.GetUpdatesChan(u)
 
 	for update := range updates {
-		// if update.Message != nil {
-		// 	log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
-
-		// 	msg := tgb.NewMessage(update.Message.Chat.ID, update.Message.Text)
-		// 	// msg.ReplyToMessageID = update.Message.MessageID
-
-		// 	bot.Send(msg)
-		// }
-
 		if update.Message != nil {
 			// 看進來的是什麼指令
 			cmd := update.Message.Command()
@@ -57,6 +48,17 @@ func easyReply() {
 				}
 				stdout = string(stdoutBytes)
 				fmt.Println("stdout: ", stdout)
+			case "md":
+				log.Printf("[%s] %s", update.Message.From.UserName, update.Message.Text)
+
+				m := update.Message.CommandArguments()
+
+				msg := tgb.NewMessage(update.Message.Chat.ID, "**"+m+"**")
+				// msg.ReplyToMessageID = update.Message.MessageID
+				msg.Entities = append(msg.Entities, tgb.MessageEntity{Type: "bold"})
+
+				bot.Send(msg)
+
 			default:
 				fmt.Println("Do nothing")
 			}
