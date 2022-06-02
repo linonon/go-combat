@@ -1,13 +1,12 @@
 #!/usr/local/bin/zsh
 
 function cdgpacp() {
-    echo ""
     cd $1
-    pwd
+    echo "cd to `pwd`"
 	git pull && git add .
 	git commit -m "定時提交: $(date '+%Y-%m-%d %H:%M:%S')"
 	git push
-	echo ""
+	echo "Sync done in $1"
 }
 
 CURRENT_DIR=$(pwd)
