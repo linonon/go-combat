@@ -7,6 +7,7 @@ function cdgpacp() {
 	git commit -m "定時提交: $(date '+%Y-%m-%d %H:%M:%S')"
 	git push
 	echo "Sync done in $1"
+	echo ""
 }
 
 CURRENT_DIR=$(pwd)
