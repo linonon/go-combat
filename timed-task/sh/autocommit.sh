@@ -2,11 +2,11 @@
 
 function cdgpacp() {
     cd $1
-    echo "👉 cd to `pwd`"
+    echo "👉 `pwd`"
 	git pull && git add .
 	git commit -m "定時提交: $(date '+%Y-%m-%d %H:%M:%S')"
 	git push
-	echo "======================"
+	echo "👌 Done"
 	echo ""
 }
 
