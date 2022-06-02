@@ -6,7 +6,6 @@ function cdgpacp() {
 	git pull && git add .
 	git commit -m "定時提交: $(date '+%Y-%m-%d %H:%M:%S')"
 	git push
-	echo "👌 Done"
 	echo ""
 }
 
