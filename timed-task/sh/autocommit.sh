@@ -15,15 +15,15 @@ CURRENT_DIR=$(pwd)
 DATE="定時提交:"$(date '+%Y-%m-%d+%H:%M:%S')
 TIMESTAMP=$DATE
 
-WORKSPACE="/Users/linonon/Workspace"
+WS="/Users/linonon/Workspace"
 
-go_combat=$WORKSPACE/go-combat
-PATH_101=$WORKSPACE/101
-cloud_native_gocamp=$WORKSPACE/Cloud-native-gocamp
-GO_Advanced_training_camp=$WORKSPACE/GO-Advanced-training-camp
-Learn_Go_with_Github=$WORKSPACE/Learn-Go-with-Github
-MyMacConfig=$WORKSPACE/MyMacConfig
-leetcode_go_TDD=$WORKSPACE/leetcode-go-TDD
+go_combat=$WS/go-combat
+PATH_101=$WS/101
+cloud_native_gocamp=$WS/Cloud-native-gocamp
+GO_Advanced_training_camp=$WS/GO-Advanced-training-camp
+Learn_Go_with_Github=$WS/Learn-Go-with-Github
+MyMacConfig=$WS/MyMacConfig
+leetcode_go_TDD=$WS/leetcode-go-TDD
 
 cdgpacp $go_combat
 cdgpacp $PATH_101
