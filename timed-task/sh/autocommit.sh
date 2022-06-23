@@ -23,6 +23,7 @@ GO_Advanced_training_camp=$WS/GO-Advanced-training-camp
 Learn_Go_with_Github=$WS/Learn-Go-with-Github
 MyMacConfig=$WS/MyMacConfig
 leetcode_go_TDD=$WS/leetcode-go-TDD
+playground=$WS/Playground
 
 cdgpacp $go_combat
 cdgpacp $PATH_101
@@ -31,5 +32,6 @@ cdgpacp $GO_Advanced_training_camp
 cdgpacp $Learn_Go_with_Github
 cdgpacp $MyMacConfig
 cdgpacp $leetcode_go_TDD
+cdgpacp $playground
 
 cd $CURRENT_DIR
