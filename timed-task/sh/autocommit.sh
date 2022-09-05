@@ -24,7 +24,7 @@ Learn_Go_with_Github=$WS/Learn-Go-with-Github
 MyMacConfig=$WS/MyMacConfig
 leetcode_go_TDD=$WS/leetcode-go-TDD
 playground=$WS/Playground
-
+lp=$WS/learning-process
 cdgpacp $go_combat
 cdgpacp $PATH_101
 cdgpacp $cloud_native_gocamp
@@ -33,5 +33,6 @@ cdgpacp $Learn_Go_with_Github
 cdgpacp $MyMacConfig
 cdgpacp $leetcode_go_TDD
 cdgpacp $playground
+cdgpacp $lp 
 
 cd $CURRENT_DIR
