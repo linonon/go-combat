@@ -25,6 +25,9 @@ MyMacConfig=$WS/MyMacConfig
 leetcode_go_TDD=$WS/leetcode-go-TDD
 playground=$WS/Playground
 lp=$WS/learning-process
+ted=$WS/ted-listening-practice
+
+
 cdgpacp $go_combat
 cdgpacp $PATH_101
 cdgpacp $cloud_native_gocamp
@@ -34,5 +37,6 @@ cdgpacp $MyMacConfig
 cdgpacp $leetcode_go_TDD
 cdgpacp $playground
 cdgpacp $lp 
+cdgpacp $ted
 
 cd $CURRENT_DIR
